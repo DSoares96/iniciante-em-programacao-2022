@@ -2,7 +2,7 @@ function exibirResultado(mensagem) {
     const areaResultado = document.querySelector(".resultado-partida");
     if (mensagem) {
         areaResultado.innerHTML = mensagem;
-    } else {
+    }else {
         areaResultado.innerHTML = "";
     }
 }
@@ -14,5 +14,5 @@ function desenharSimbolo(simbolo, posicaoLinha, posicaoColuna) {
 
 function marcarJogadorAtivo(simbolo) {
     const jogadorAtivo = document.querySelector(".jogador-ativo > span");
-    jogadorAtivo.innerHTML = simbolo;
+    jogadorAtivo.innerHTML = simbolo; 
 }

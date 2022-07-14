@@ -1,4 +1,3 @@
-
 const X = "X";
 const O = "O";
 let turno;
@@ -6,11 +5,9 @@ let trocaVez = true;
 let jogador = O;
 let fimDeJogo = false;
 
-
 function reiniciarJogo() {
     location.reload()
 }
-
 
 function selecionarArea(posicaoLinha, posicaoColuna) {
 
@@ -36,7 +33,6 @@ function selecionarArea(posicaoLinha, posicaoColuna) {
     fimDeJogo = verificaVencedor(jogador);
 }
 
-
 function verificaVencedor() {
 
     const quadrado = document.querySelectorAll(".quadrado-jogo");
@@ -61,6 +57,5 @@ function verificaVencedor() {
         } else if (((c3 == c2 && c3 == c1) || (c3 == a3 && c3 == b3)) && c3 != "") {
             vencedor = c3
         }
-      
     }
 }
